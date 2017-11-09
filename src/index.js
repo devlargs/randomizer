@@ -56,7 +56,10 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                    <button onClick={() => this.randomize()}>PUMILI</button>
+                    {
+                        (localStorage.getItem('admin')) &&
+                        <button onClick={() => this.randomize()}>PUMILI</button>
+                    }
 
                     <h1>RANDOM SOME SHIT</h1>
                     <h2><b>{this.state.napili}</b></h2>
