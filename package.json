@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "heroku-postbuild": "webpack"
+    "heroku-postbuild": "webpack",
+    "dev": "webpack --watch & nodemon"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
