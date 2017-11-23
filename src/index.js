@@ -23,7 +23,7 @@ export default class App extends Component {
     }
     
     randomize(){
-        var list = ['Jerome', 'Ralph', 'Mark', 'Gabriel', 'Karl', 'Josua', 'Randur', 'Harry']
+        var list = ['Jerome', 'Harry nanaman', 'Mark', 'Gabriel', 'Karl', 'Josua', 'Randur', 'Harry']
         var rand = Math.floor(Math.random() * list.length);
 
         firebase.database().ref('users').set({
